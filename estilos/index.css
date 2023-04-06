@@ -45,20 +45,30 @@ body main .banner .container .description .containerButton .btn-discord:hover, b
   margin-bottom: 0;
   text-align: center;
   color: #fcfcfc;
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 56px;
+  font-weight: 900;
 }
 .title--small {
-  font-size: 24px;
+  font-size: 42px;
+  font-weight: 800;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 .title--purple {
   color: #ac4dff;
 }
 
-.subtitle {
+.subtitle, .subtitle--blue {
+  display: inline-block;
   color: #fcfcfc;
-  font-size: 30px;
-  margin-bottom: 3.5rem;
+  font-size: 20px;
+}
+.subtitle--blue {
+  color: #06f;
+  font-size: 16px;
+  padding: 0.75rem 1rem;
+  border: 2px #06f solid;
+  opacity: 0.75;
 }
 
 .paragraph, .paragraph--bold, .paragraph--big {
@@ -143,9 +153,6 @@ body main .banner .container .description {
 body main .banner .container .description .title, body main .banner .container .description .title--small, body main .banner .container .description .title--purple {
   margin-bottom: 0.5em;
   width: 90%;
-  font-size: 3.5em;
-  font-weight: normal;
-  font-weight: 900;
   text-align: left;
 }
 body main .banner .container .description .paragraph, body main .banner .container .description .paragraph--big, body main .banner .container .description .paragraph--bold {
@@ -203,18 +210,16 @@ body main .departments .btn--container:hover {
 body main .departments .btn--container:active {
   text-decoration: none;
 }
-body main .departments .btn--container .title, body main .departments .btn--container .title--small, body main .departments .btn--container .title--purple {
-  font-weight: 500;
-  margin-bottom: 1em;
-  font-size: 1.5em;
-  color: #fcfcfc;
-}
 body main .departments .btn--container .thumb {
   width: 100%;
 }
 body main .departments .btn--container .thumb img {
   margin-bottom: 1.5em;
   width: 100%;
+}
+body main .departments .btn--container .subtitle, body main .departments .btn--container .subtitle--blue {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
 }
 body main .departments .btn--container .description {
   padding: 0em 2em;
@@ -242,17 +247,17 @@ body main .categories .category {
 body main .categories .category:hover {
   box-shadow: 0px 0px 20px rgb(35, 35, 35);
 }
-body main .categories .category .name {
-  color: #fcfcfc;
-  text-align: left;
-}
 body main .categories .category .thumb {
   width: 40%;
 }
 body main .categories .category .thumb img {
   width: 100%;
 }
-body main .categories .category .description .descriptionText {
+body main .categories .category .description .subtitle, body main .categories .category .description .subtitle--blue {
+  display: block;
+  text-align: left;
+}
+body main .categories .category .description .paragraph, body main .categories .category .description .paragraph--big, body main .categories .category .description .paragraph--bold {
   margin: 0;
   text-align: left;
 }
@@ -280,9 +285,8 @@ body main .benefits .container .benefit .description {
   text-align: center;
   color: #fcfcfc;
 }
-body main .benefits .container .benefit .description .title, body main .benefits .container .benefit .description .title--small, body main .benefits .container .benefit .description .title--purple {
+body main .benefits .container .benefit .description .subtitle, body main .benefits .container .benefit .description .subtitle--blue {
   margin-top: 0em;
-  color: #fcfcfc;
 }
 body main .carrousel {
   padding: 6em 0em;
@@ -293,7 +297,7 @@ body main .carrousel .carrousel__container {
   width: 90%;
   margin: auto;
 }
-body main .carrousel .carrousel__container .subtitle {
+body main .carrousel .carrousel__container .subtitle, body main .carrousel .carrousel__container .subtitle--blue {
   font-size: 2em;
   margin-top: 0em;
   margin-bottom: 2em;
@@ -346,7 +350,6 @@ body main .carrousel .indicators .glider-dot.active {
   opacity: 1;
 }
 body main .gallery {
-  background-color: #191919;
   width: 100%;
   text-align: center;
   padding: 5em 0em;
@@ -373,7 +376,7 @@ body footer .contact .form {
   margin: 1em auto;
   padding: 1em;
 }
-body footer .contact .form .subtitle {
+body footer .contact .form .subtitle, body footer .contact .form .subtitle--blue {
   margin-bottom: 1.2em;
   font-size: 1.7em;
 }

@@ -70,13 +70,16 @@ $gradient: linear-gradient(to right, #743ad5, #d53a9d);
     margin-bottom: 0;
     text-align: center;
     color: $white;
-    font-size: 28px;
+    font-size: 56px;
     //font-family: 'Alegreya', serif;
-    font-weight: 600;
+    font-weight: 900;
 
     &--small {
         @extend .title;
-        font-size: 24px;
+        font-size: 42px;
+        font-weight: 800;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
     }
 
     &--purple {
@@ -86,9 +89,18 @@ $gradient: linear-gradient(to right, #743ad5, #d53a9d);
 }
 
 .subtitle {
+    display: inline-block;
     color: $white;
-    font-size: 30px;
-    margin-bottom: 3.5rem;
+    font-size: 20px;
+
+    &--blue {
+        @extend .subtitle;
+        color: $blue;
+        font-size: 16px;
+        padding: .75rem 1rem;
+        border: 2px $blue solid;
+        opacity: .75;
+    }
 }
 
 .paragraph {
