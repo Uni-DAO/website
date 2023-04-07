@@ -485,4 +485,124 @@ body footer .social-media .copyright {
   margin-top: 7em;
   font-size: 14px;
   color: #fcfcfc;
+}
+
+/* Large devices (laptops, 992px and dowm) */
+/* Medium devices (landscape tablets, 768px and dowm) */
+@media only screen and (max-width: 768px) {
+  body main .banner .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  body main .banner .container .description {
+    width: 90%;
+    margin: 0 auto;
+  }
+  body main .banner .container .description .title, body main .banner .container .description .title--small, body main .banner .container .description .title--purple {
+    margin-top: 0em;
+    margin-bottom: 1em;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+  }
+  body main .banner .container .description .paragraph, body main .banner .container .description .paragraph--big, body main .banner .container .description .paragraph--bold {
+    margin-top: 0;
+    margin-bottom: 2em;
+    width: 100%;
+    text-align: center;
+  }
+  body main .banner .container .description .containerButton {
+    align-content: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 100%;
+  }
+  body main .banner .container .description .btn-learn {
+    margin-right: 0.25em;
+  }
+  body main .banner .container .description .btn-discord {
+    margin-left: 0.25em;
+  }
+  body main .banner .container .thumb {
+    width: 75%;
+    margin-top: 3em;
+  }
+  body main .banner .container .thumb img {
+    width: 100%;
+  }
+  body main .departments .container-department {
+    flex-direction: column;
+  }
+  body main .departments .btn--container {
+    width: 50%;
+  }
+  body main .categories {
+    padding-top: 2.5em;
+  }
+  body main .categories .container .container-category {
+    flex-wrap: wrap;
+  }
+  body main .categories .container .container-category .category {
+    width: 44%;
+    margin: 2.5% 0;
+  }
+  body main .categories .container .container-category .category .descriptionText {
+    display: none;
+  }
+  body main .benefits {
+    padding-top: 2.5em;
+  }
+  body main .benefits .container {
+    flex-wrap: wrap;
+  }
+  body main .benefits .container .benefit {
+    width: 100%;
+  }
+  body main .carrousel {
+    padding-top: 2.5em;
+  }
+  body main .carrousel .carrousel__container {
+    width: 80%;
+  }
+  body footer .social-media {
+    padding: 2.5em 0em 0em 0em;
+  }
+  body footer .social-media .title, body footer .social-media .title--small, body footer .social-media .title--purple {
+    margin-bottom: 1em;
+  }
+  body footer .social-media .container {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  body footer .social-media .copyright {
+    margin-top: 3.5em;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and down) */
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+  body header .headboard {
+    padding: 1rem 0;
+  }
+  body header .headboard .container .title, body header .headboard .container .title--small, body header .headboard .container .title--purple {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  body header .headboard .container .menuBar {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  body header .headboard .container .menuBar .menu {
+    width: 100%;
+  }
+  body header .headboard .container .menuBar .menu .btn-menu {
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  body main .departments .btn--container {
+    width: 75%;
+  }
 }/*# sourceMappingURL=index.css.map */
