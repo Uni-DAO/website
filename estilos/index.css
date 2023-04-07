@@ -234,6 +234,7 @@ body main .categories {
 body main .categories .container-category {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 2rem;
   margin: 0.25rem;
 }
