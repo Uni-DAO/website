@@ -302,19 +302,34 @@ body main .brands .container {
   gap: 2.5rem;
 }
 body main .brands .brand {
+  position: relative;
   background-color: #131515;
   padding: 1rem;
   border-radius: 5px;
 }
 body main .brands .brand:hover {
   background-color: #1b1b1b;
-  opacity: 1;
+}
+body main .brands .brand:hover .thumb {
+  opacity: 0.25;
+}
+body main .brands .brand:hover .subtitle, body main .brands .brand:hover .subtitle--blue {
+  display: block;
 }
 body main .brands .brand .thumb {
-  width: 150px;
+  width: 100%;
 }
 body main .brands .brand .thumb img {
-  width: 100%;
+  width: 150px;
+}
+body main .brands .brand div .subtitle, body main .brands .brand div .subtitle--blue {
+  display: none;
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 body main .carrousel {
   padding: 6em 0em;
