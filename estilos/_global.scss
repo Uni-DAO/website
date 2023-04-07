@@ -97,9 +97,12 @@ $gradient: linear-gradient(to right, #743ad5, #d53a9d);
         @extend .subtitle;
         color: $blue;
         font-size: 16px;
-        padding: .75rem 1rem;
-        border: 2px $blue solid;
-        opacity: .75;
+        padding-bottom: .25rem;
+        border: 2px rgba(0, 102, 255, 0.50) solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        // opacity: .75;
     }
 }
 

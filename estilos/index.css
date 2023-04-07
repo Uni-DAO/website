@@ -66,9 +66,11 @@ body main .banner .container .description .containerButton .btn-discord:hover, b
 .subtitle--blue {
   color: #06f;
   font-size: 16px;
-  padding: 0.75rem 1rem;
-  border: 2px #06f solid;
-  opacity: 0.75;
+  padding-bottom: 0.25rem;
+  border: 2px rgba(0, 102, 255, 0.5) solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 .paragraph, .paragraph--bold, .paragraph--big {
