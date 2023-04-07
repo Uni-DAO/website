@@ -538,9 +538,6 @@ body footer .social-media .copyright {
     width: 44%;
     margin: 2.5% 0;
   }
-  body main .categories .container .container-category .category .descriptionText {
-    display: none;
-  }
   body main .benefits {
     padding-top: 2.5em;
   }
@@ -645,5 +642,22 @@ body footer .social-media .copyright {
   }
   body main .departments .btn--container {
     width: 75%;
+  }
+  body main .categories {
+    padding-top: 2.5em;
+  }
+  body main .categories .container .container-category {
+    flex-wrap: wrap;
+  }
+  body main .categories .container .container-category .category {
+    width: 75%;
+    margin: 2.5% auto;
+  }
+  body main .gallery img {
+    width: 75%;
+  }
+  body main .departments, body main .categories, body main .benefits, body main .gallery {
+    padding: 0;
+    margin-top: 5rem;
   }
 }/*# sourceMappingURL=index.css.map */

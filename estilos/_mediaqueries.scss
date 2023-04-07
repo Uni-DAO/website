@@ -69,10 +69,6 @@
                         .category {
                             width: 44%;
                             margin: 2.5% 0;
-
-                            .descriptionText {
-                                display: none;
-                            }
                         }
                     }
                 }
@@ -239,6 +235,34 @@
                 .btn--container {
                     width: 75%;
                 }
+            }
+
+            .categories {
+                padding-top: 2.5em;
+
+                .container {
+
+                    .container-category {
+                        flex-wrap: wrap;
+
+                        .category {
+                            width: 75%;
+                            margin: 2.5% auto;
+                        }
+                    }
+                }
+            }
+
+            .gallery {
+    
+                img {
+                    width: 75%;
+                }
+            }
+
+            .departments, .categories, .benefits, .gallery {
+                padding: 0;
+                margin-top: 5rem;
             }
         }
     }
