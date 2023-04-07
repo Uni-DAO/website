@@ -153,11 +153,13 @@ body {
                 display: flex;
                 flex-direction: row;
                 gap: 2rem;
+                justify-content: center;
             }
 
             .btn--container {
                 display: inline-block;
-                box-sizing: border-box;
+                // box-sizing: border-box;
+                width: 340px;
                 background-color: rgb(33, 33, 33);
                 padding: 0em 0 2em 0em;
                 text-align: center;
@@ -166,6 +168,7 @@ body {
                 transition: all 0.3s ease;
                 text-decoration: none;
                 border-radius: 5px;
+                height: 100%;
 
                 &:hover {
                     background-color: #1a1a1a;
