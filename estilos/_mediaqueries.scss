@@ -253,6 +253,33 @@
                 }
             }
 
+            .brands {    
+                .container {
+                    gap: 0rem;
+                }
+    
+                .brand {
+                    padding: 0.85rem 3rem;
+
+                    .thumb {    
+                        img {
+                            width: 125px;
+                        }
+                    }
+    
+                    div {
+                        .subtitle {
+                            display: block;
+                            position: relative;
+                            width: 75%;
+                            top: 15px;
+                            line-height: 23px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
             .gallery {
     
                 img {
@@ -260,7 +287,7 @@
                 }
             }
 
-            .departments, .categories, .benefits, .gallery {
+            .departments, .categories, .benefits, .brands, .gallery {
                 padding: 0;
                 margin-top: 5rem;
             }

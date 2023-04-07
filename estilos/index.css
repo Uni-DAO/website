@@ -694,10 +694,27 @@ body footer .social-media .copyright {
     width: 75%;
     margin: 2.5% auto;
   }
+  body main .brands .container {
+    gap: 0rem;
+  }
+  body main .brands .brand {
+    padding: 0.85rem 3rem;
+  }
+  body main .brands .brand .thumb img {
+    width: 125px;
+  }
+  body main .brands .brand div .subtitle, body main .brands .brand div .subtitle--blue {
+    display: block;
+    position: relative;
+    width: 75%;
+    top: 15px;
+    line-height: 23px;
+    font-size: 14px;
+  }
   body main .gallery img {
     width: 75%;
   }
-  body main .departments, body main .categories, body main .benefits, body main .gallery {
+  body main .departments, body main .categories, body main .benefits, body main .brands, body main .gallery {
     padding: 0;
     margin-top: 5rem;
   }
