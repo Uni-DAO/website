@@ -290,6 +290,32 @@ body main .benefits .container .benefit .description {
 body main .benefits .container .benefit .description .subtitle, body main .benefits .container .benefit .description .subtitle--blue {
   margin-top: 0em;
 }
+body main .brands {
+  padding: 7.5em 0em;
+}
+body main .brands .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+body main .brands .brand {
+  background-color: #131515;
+  padding: 1rem;
+  border-radius: 5px;
+}
+body main .brands .brand:hover {
+  background-color: #1b1b1b;
+  opacity: 1;
+}
+body main .brands .brand .thumb {
+  width: 150px;
+}
+body main .brands .brand .thumb img {
+  width: 100%;
+}
 body main .carrousel {
   padding: 6em 0em;
 }

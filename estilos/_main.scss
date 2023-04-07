@@ -279,6 +279,38 @@ body {
             }
         }
 
+        .brands {
+            padding: 7.5em 0em;
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 2.5rem;
+            }
+
+            .brand {
+                background-color: $black;
+                padding: 1rem;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: #1b1b1b;
+                    opacity: 1;
+                }
+
+                .thumb {
+                    width: 150px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
         .carrousel {
             padding: 6em 0em;
 
