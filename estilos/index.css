@@ -17,6 +17,7 @@ body main .banner .container .description .containerButton .btn-discord, body he
 .btn:hover, body main .banner .container .description .containerButton .btn-learn:hover,
 body main .banner .container .description .containerButton .btn-discord:hover, body header .headboard .container .menuBar .menu .btn-menu:hover, .btn--transparent:hover {
   box-shadow: 0px 0px 6px rgb(56, 56, 56);
+  background-color: rgb(16, 75, 163);
 }
 
 .btn-inline {
