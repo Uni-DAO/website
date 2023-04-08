@@ -161,83 +161,6 @@ body .gallery img:hover {
 body .gallery .btn, body .gallery .btn--transparent, body .gallery header .headboard .container .menuBar .menu .btn-menu, body header .headboard .container .menuBar .menu .gallery .btn-menu {
   margin-top: 3rem;
 }
-body footer .contact {
-  padding: 5rem 0;
-}
-body footer .contact .form {
-  font-size: 20px;
-  width: 25em;
-  margin: 1em auto;
-  padding: 1em;
-}
-body footer .contact .form .subtitle, body footer .contact .form .subtitle--blue {
-  margin-bottom: 1.2em;
-  font-size: 1.7em;
-}
-body footer .contact .form input {
-  font-size: 18px;
-  display: block;
-}
-body footer .contact .form input[type=text],
-body footer .contact .form input[type=email],
-body footer .contact .form textarea {
-  width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-radius: 0.15em;
-  border: 0.01em solid #226fc1;
-}
-body footer .contact .form input[type=text]:focus,
-body footer .contact .form input[type=email]:focus,
-body footer .contact .form textarea:focus {
-  border: 0.01em solid #06f;
-  outline: none;
-}
-body footer .contact .form textarea {
-  font-size: 18px;
-  min-height: 5em;
-  max-height: 15em;
-  max-width: 100%;
-  min-width: 100%;
-}
-body footer .contact .form input[type=checkbox] {
-  /* display:inline-flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0; */
-  width: 1em;
-  height: 1em;
-  background-color: #d5d5d5;
-  border-radius: 0.25px;
-}
-body footer .contact .form input[type=checkbox]:hover {
-  cursor: pointer;
-}
-body footer .contact .form label {
-  display: inline-flex;
-  align-items: center;
-  color: #adadad;
-  font-size: 16px;
-}
-body footer .contact .form p {
-  margin-left: 0.5em;
-}
-body footer .contact .form input[type=submit] {
-  width: 10em;
-  margin: 0em auto;
-  margin-top: 1.5em;
-  padding: 0.75em;
-  border-radius: 0.15em;
-  border: 0.05em solid #06f;
-  background-color: #06f;
-  color: #fcfcfc;
-  cursor: pointer;
-  transition: all 350ms ease;
-}
-body footer .contact .form input[type=submit]:hover {
-  background-color: transparent;
-  color: #06f;
-}
 body footer .social-media {
   padding: 4em 0em 2em 0em;
   height: -moz-max-content;
@@ -277,4 +200,57 @@ body footer .social-media .copyright {
   margin-top: 7em;
   font-size: 14px;
   color: #fcfcfc;
+}
+
+/* Medium devices (landscape tablets, 768px and dowm) */
+@media only screen and (max-width: 768px) {
+  body footer .social-media {
+    padding: 2.5em 0em 0em 0em;
+  }
+  body footer .social-media .title, body footer .social-media .title--small, body footer .social-media .title--purple {
+    margin-bottom: 1em;
+  }
+  body footer .social-media .container {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  body footer .social-media .copyright {
+    margin-top: 3.5em;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title--small {
+    font-size: 28px;
+    width: 90%;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+  body header .headboard {
+    padding: 1rem 0;
+  }
+  body header .headboard .container .title, body header .headboard .container .title--small, body header .headboard .container .title--purple {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  body header .headboard .container .menuBar {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  body header .headboard .container .menuBar .menu {
+    width: 100%;
+  }
+  body header .headboard .container .menuBar .menu .btn-menu {
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  body .gallery {
+    padding: 2.5rem 0;
+  }
 }/*# sourceMappingURL=gallery.css.map */
