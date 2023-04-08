@@ -413,6 +413,11 @@ body main .gallery img:hover {
   border: 1px solid white;
   opacity: 1;
 }
+body main .gallery .btn, body main .gallery .btn--transparent, body main .gallery header .headboard .container .menuBar .menu .btn-menu, body header .headboard .container .menuBar .menu main .gallery .btn-menu, body main .gallery .banner .container .description .containerButton .btn-learn, body main .banner .container .description .containerButton .gallery .btn-learn,
+body main .gallery .banner .container .description .containerButton .btn-discord,
+body main .banner .container .description .containerButton .gallery .btn-discord {
+  margin-top: 3rem;
+}
 body footer .contact {
   padding: 5rem 0;
 }
