@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+body {
+    font-size: 16px;
+    background-color: $black;
+    text-align: center;
+    // font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    .gallery {
+        // background-color: #191919;
+        width: 100%;
+        text-align: center;
+        padding: 5em 0em;
+
+        img {
+            width: 20em;
+            vertical-align: top;
+            margin: 1.25em;
+            padding: 0.31em;
+            border: 1px solid #1D1C1D;
+            opacity: .5;
+            transition: all 0.2s ease;
+
+            &:hover {
+                border: 1px solid white;
+                opacity: 1;
+            }
+        }
+
+        .btn {
+            margin-top: 3rem;
+        }
+    }
+}
