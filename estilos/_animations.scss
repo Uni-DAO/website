@@ -1,0 +1,25 @@
+section:not(.headboard) {
+    opacity: 0;
+    transition: all 1000ms ease;
+}
+
+.title--small {
+    opacity: 0;
+    transition: all 50ms ease;
+}
+
+img:not(.logo, .brand-img),
+.btn:not(.btn-menu) {
+    opacity: 0;
+    transition: all 2000ms ease;
+}
+
+.title--small.active {
+    opacity: 1;
+}
+
+section.active,
+img.active,
+.btn.active {
+    opacity: 1;
+}

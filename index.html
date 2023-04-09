@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-    <link rel="stylesheet" href="../estilos/normalize.css">
-    <link rel="stylesheet" href="../estilos/font-awesome.min.css">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/841e144e18.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -16,7 +16,6 @@
     <title>Uni.DAO UAQ</title>
     <link rel="stylesheet" href="estilos/index.css">
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-    <script src="../jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,7 +38,7 @@
         </section>
     </header>
 
-    <main>
+    <main id="main">
         <section class="banner">
             <div class="container">
                 <div class="description">
@@ -47,8 +46,8 @@
                     <p class="paragraph">Brindamos educación y desarrollamos proyectos utilizando tecnologías emergentes
                         como Blockchain para innovar y construir el futuro.</p>
                     <div class="containerButton">
-                        <a href="#" class="btn-learn">Aprende</a>
-                        <a href="#" class="btn-whatsapp btn--transparent">Sé parte</a>
+                        <a href="#" class="btn btn-learn">Aprende</a>
+                        <a href="#" class="btn btn-whatsapp btn--transparent">Sé parte</a>
                     </div>
                 </div>
 
@@ -224,7 +223,7 @@
             <div class="container">
                 <div class="brand">
                     <div class="thumb">
-                        <img src="img/logo-uaq-color.png" alt="Logo Universidad Autónoma de Querétaro">
+                        <img src="img/logo-uaq-color.png" class="brand-img" alt="Logo Universidad Autónoma de Querétaro">
                     </div>
 
                     <div>
@@ -236,7 +235,7 @@
 
                 <div class="brand">
                     <div class="thumb">
-                        <img src="img/logo-fif-color.png" alt="Logo Facultad de Informática UAQ">
+                        <img src="img/logo-fif-color.png" class="brand-img" alt="Logo Facultad de Informática UAQ">
                     </div>
 
                     <div>
@@ -248,7 +247,7 @@
 
                 <div class="brand">
                     <div class="thumb">
-                        <img src="img/logo-coparmex-color.png" alt="Logo Comisión de Innovación COPARMEX Querétaro">
+                        <img src="img/logo-coparmex-color.png" class="brand-img" alt="Logo Comisión de Innovación COPARMEX Querétaro">
                     </div>
 
                     <div>
@@ -260,7 +259,7 @@
 
                 <div class="brand">
                     <div class="thumb">
-                        <img src="img/logo-mrcoin-color.png" alt="Logo Mr.Coin">
+                        <img src="img/logo-mrcoin-color.png" class="brand-img" alt="Logo Mr.Coin">
                     </div>
 
                     <div>
@@ -272,7 +271,7 @@
 
                 <div class="brand">
                     <div class="thumb">
-                        <img src="img/logo-imblot-opc2.png" alt="Logo IMBLOT">
+                        <img src="img/logo-imblot-opc2.png" class="brand-img" alt="Logo IMBLOT">
                     </div>
 
                     <div>
@@ -358,7 +357,7 @@
                     <input type="checkbox" name="terminos" id="terminos" required>
                     <P>Acepto los términos y condiciones.</P>
                 </label>
-                <input type="submit" value="Enviar">
+                <input class="btn" type="submit" value="Enviar">
             </form>
         </section>
 
@@ -376,6 +375,8 @@
         </section>
 
     </footer>
+
+    <script src="scripts/animations.js"></script>
 </body>
 
 </html>
