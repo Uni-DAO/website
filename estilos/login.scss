@@ -129,14 +129,15 @@ body {
                 }
         
                 input[type="submit"] {
-                    width: 10em;
-                    margin: 0em auto;
+                    width: 10rem;
+                    margin: 0rem auto;
                     margin-top: 1rem;
-                    padding: 0.75em;
-                    border-radius: 0.30em;
-                    border: 0.05em solid $blue;
+                    padding: 0.75rem;
+                    border-radius: 0.30rem;
+                    border: 0.05rem solid $blue;
                     background-color: $blue;
                     color: $white;
+                    font-size: 16px;
                     cursor: pointer;
                     transition: all 350ms ease;
         

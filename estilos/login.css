@@ -176,14 +176,15 @@ body main .container--login .form .container--input label {
   text-align: left;
 }
 body main .container--login .form input[type=submit] {
-  width: 10em;
-  margin: 0em auto;
+  width: 10rem;
+  margin: 0rem auto;
   margin-top: 1rem;
-  padding: 0.75em;
-  border-radius: 0.3em;
-  border: 0.05em solid #06f;
+  padding: 0.75rem;
+  border-radius: 0.3rem;
+  border: 0.05rem solid #06f;
   background-color: #06f;
   color: #fcfcfc;
+  font-size: 16px;
   cursor: pointer;
   transition: all 350ms ease;
 }
