@@ -8,7 +8,8 @@ let options = {
 
 let setItemActive = (entries, observer) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting
+            && navigator.userAgent.toLowerCase().match(/mobile/i)) {
             entry.target.classList.add('active');
         }
 
