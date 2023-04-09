@@ -187,26 +187,6 @@ body {
 
 /* Medium devices (landscape tablets, 768px and dowm) */
 @media only screen and (max-width: 768px) {
-    body {
-        footer {
-            .social-media {
-                padding: 2.5em 0em 0em 0em;
-
-                .title {
-                    margin-bottom: 1em;
-                }
-
-                .container {
-                    flex-wrap: wrap;
-                    align-items: center;
-                }
-
-                .copyright {
-                    margin-top: 3.5em;
-                }
-            }
-        }
-    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and down) */
@@ -250,6 +230,70 @@ body {
                         }
                     }
                 }
+            }
+        }
+
+        main {
+            .container--login {
+    
+                .form {
+                    max-width: 300px;
+                    width: 90%;
+            
+                    .container--input {
+                        
+                        input {
+                            font-size: 16px;
+                            display: block;
+                            width: 100%;
+                            padding: 0.75rem;
+                            margin: 10px auto;
+                            border-radius: 0.15em;
+                            border: 0.01em solid $blue-clear;
+                
+                            &:focus {
+                                border: 0.01em solid $blue;
+                                outline: none;
+                            }
+                        }
+                
+                        label {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .container--signup {
+                @extend .container;
+                margin: 3.5rem auto 7.5rem auto;
+    
+                .title--small {
+                    margin-bottom: 3.5rem;
+                }
+
+                .paragraph {
+                    width: 75%;
+                    margin: 0 auto;
+                    line-height: 25px;
+                }
+    
+                .btn {
+                    margin-top: 4rem;
+                }
+    
+                .btn--inline {
+                    margin-top: 2rem;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        footer {
+            .copyright {
+                font-size: 12px;
+                width: 75%;
+                margin: 0 auto;
             }
         }
     }

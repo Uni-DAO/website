@@ -220,21 +220,6 @@ body footer .copyright {
 }
 
 /* Medium devices (landscape tablets, 768px and dowm) */
-@media only screen and (max-width: 768px) {
-  body footer .social-media {
-    padding: 2.5em 0em 0em 0em;
-  }
-  body footer .social-media .title, body footer .social-media .title--small, body footer .social-media .title--purple {
-    margin-bottom: 1em;
-  }
-  body footer .social-media .container, body footer .social-media main .container--login, body main footer .social-media .container--login, body footer .social-media main .container--signup, body main footer .social-media .container--signup {
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  body footer .social-media .copyright {
-    margin-top: 3.5em;
-  }
-}
 /* Small devices (portrait tablets and large phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .title--small {
@@ -266,5 +251,48 @@ body footer .copyright {
   body header .headboard .container .menuBar .menu .btn-menu, body header .headboard main .container--login .menuBar .menu .btn-menu, body main header .headboard .container--login .menuBar .menu .btn-menu, body header .headboard main .container--signup .menuBar .menu .btn-menu, body main header .headboard .container--signup .menuBar .menu .btn-menu {
     margin: 0 auto;
     font-size: 16px;
+  }
+  body main .container--login .form {
+    max-width: 300px;
+    width: 90%;
+  }
+  body main .container--login .form .container--input input {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 10px auto;
+    border-radius: 0.15em;
+    border: 0.01em solid #226fc1;
+  }
+  body main .container--login .form .container--input input:focus {
+    border: 0.01em solid #06f;
+    outline: none;
+  }
+  body main .container--login .form .container--input label {
+    font-size: 14px;
+  }
+  body main .container--signup {
+    margin: 3.5rem auto 7.5rem auto;
+  }
+  body main .container--signup .title--small {
+    margin-bottom: 3.5rem;
+  }
+  body main .container--signup .paragraph, body main .container--signup .paragraph--big, body main .container--signup .paragraph--bold {
+    width: 75%;
+    margin: 0 auto;
+    line-height: 25px;
+  }
+  body main .container--signup .btn, body main .container--signup .btn--transparent, body main .container--signup header .headboard .container .menuBar .menu .btn-menu, body header .headboard .container .menuBar .menu main .container--signup .btn-menu, body header .headboard main .container--login .menuBar .menu .container--signup .btn-menu, body main .container--signup header .headboard .container--login .menuBar .menu .btn-menu, body main header .headboard .container--login .menuBar .menu .container--signup .btn-menu, body header .headboard main .container--signup .menuBar .menu .btn-menu, body main header .headboard .container--signup .menuBar .menu .btn-menu {
+    margin-top: 4rem;
+  }
+  body main .container--signup .btn--inline {
+    margin-top: 2rem;
+    font-size: 16px;
+  }
+  body footer .copyright {
+    font-size: 12px;
+    width: 75%;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=login.css.map */
