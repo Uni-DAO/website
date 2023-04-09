@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="../estilos/normalize.css">
+    <link rel="stylesheet" href="../estilos/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/841e144e18.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <title>Inicia Sesión | Uni.DAO</title>
+    <link rel="stylesheet" href="estilos/login.css">
+</head>
+
+<body>
+    <header>
+        <section class="headboard">
+            <div class="container">
+                <div class="menuBar">
+                    <div class="logo">
+                        <!-- <h3 class="title">Uni.DAO</h3> -->
+                        <a href="index.html">
+                            <img class="logo" src="img/logo-cut.png" alt="Logo de UniDAO">
+                        </a>
+                    </div>
+
+                    <!-- <nav class="menu">
+                        <a href="html/learn-page.html" class="btn-menu">Comienza a aprender -></a>
+                    </nav> -->
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="container--login" id="container-login">
+            <form class="form" id="loginForm">
+                <div class="container--input">
+                    <label for="user">Usuario</label>
+                    <input type="text" name="user" id="userLogin">
+                </div>
+                <div class="container--input">
+                    <label for="key">Clave de acceso</label>
+                    <input type="password" name="key" id="keyLogin">
+                </div>
+                <input type="submit" value="Ingresar" name="btnSubmit" class="btn">
+            </form>
+
+            <a href="#" class="btn--inline" id="btnSignup">¿Aún no tienes acceso? Regístrate aquí</a>
+        </div>
+
+        <div class="container--signup" id="container-signup">
+            <h1 class="title--small">¡Únete a Uni.DAO!</h1>
+
+            <p class="paragraph">
+                Para poder obtener un usuario y una clave de acceso a todo el contenido de Uni.DAO, primero deberás de ser parte del grupo.
+                <br><br>
+                Contáctanos para unirte y obtener acceso a todo el contenido de manera gratuita.
+            </p>
+
+            <a href="https://wa.link/c002ot" class="btn">Quiero ser parte</a>
+            <div>
+                <a href="#" class="btn--inline" id="btnLogin">¿Ya tienes acceso? Ingresa aquí</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">Copyright © 2023 Uni.DAO. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>

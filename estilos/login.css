@@ -1,0 +1,270 @@
+.btn, body header .headboard .container .menuBar .menu .btn-menu, body header .headboard main .container--signup .menuBar .menu .btn-menu, body main header .headboard .container--signup .menuBar .menu .btn-menu, body header .headboard main .container--login .menuBar .menu .btn-menu, body main header .headboard .container--login .menuBar .menu .btn-menu, .btn--transparent {
+  display: inline-block;
+  align-items: center;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  background-color: #06f;
+  color: #fcfcfc;
+  border-radius: 0.5em;
+  transition: all 350ms ease;
+}
+.btn--transparent {
+  border: 2px solid #06f;
+  background-color: transparent;
+  color: #06f;
+}
+.btn:hover, body header .headboard .container .menuBar .menu .btn-menu:hover, body header .headboard main .container--signup .menuBar .menu .btn-menu:hover, body main header .headboard .container--signup .menuBar .menu .btn-menu:hover, body header .headboard main .container--login .menuBar .menu .btn-menu:hover, body main header .headboard .container--login .menuBar .menu .btn-menu:hover, .btn--transparent:hover {
+  box-shadow: 0px 0px 6px rgb(56, 56, 56);
+  background-color: rgb(16, 75, 163);
+}
+
+.btn--inline {
+  display: inline-block;
+  color: #06f;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.5s ease;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-color: #06f;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.btn--inline:hover {
+  color: rgb(247, 247, 247);
+  cursor: pointer;
+}
+
+.title, .title--purple, .title--small {
+  margin-bottom: 0;
+  text-align: center;
+  color: #fcfcfc;
+  font-size: 56px;
+  font-weight: 900;
+}
+.title--small {
+  font-size: 42px;
+  font-weight: 800;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.title--purple {
+  color: #ac4dff;
+}
+
+.subtitle, .subtitle--blue {
+  display: inline-block;
+  color: #fcfcfc;
+  font-size: 20px;
+}
+.subtitle--blue {
+  color: #06f;
+  font-size: 16px;
+  padding-bottom: 0.25rem;
+  border: 2px rgba(0, 102, 255, 0.5) solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.paragraph, .paragraph--bold, .paragraph--big {
+  color: #fcfcfc;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.paragraph--big {
+  font-size: 22px;
+}
+.paragraph--bold {
+  font-weight: 650;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.container, body main .container--signup, body main .container--login {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+body {
+  font-size: 16px;
+  background-color: #131515;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+body header .headboard {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0px 0.5px 10px rgb(18, 18, 18);
+  z-index: 9;
+  top: 0;
+}
+body header .headboard .container .menuBar, body header .headboard main .container--signup .menuBar, body main header .headboard .container--signup .menuBar, body header .headboard main .container--login .menuBar, body main header .headboard .container--login .menuBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+body header .headboard .container .menuBar .logo, body header .headboard main .container--signup .menuBar .logo, body main header .headboard .container--signup .menuBar .logo, body header .headboard main .container--login .menuBar .logo, body main header .headboard .container--login .menuBar .logo {
+  width: 90px;
+}
+body header .headboard .container .menuBar .menu, body header .headboard main .container--signup .menuBar .menu, body main header .headboard .container--signup .menuBar .menu, body header .headboard main .container--login .menuBar .menu, body main header .headboard .container--login .menuBar .menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  border-style: none;
+}
+body header .headboard .container .menuBar .menu .btn-menu, body header .headboard main .container--signup .menuBar .menu .btn-menu, body main header .headboard .container--signup .menuBar .menu .btn-menu, body header .headboard main .container--login .menuBar .menu .btn-menu, body main header .headboard .container--login .menuBar .menu .btn-menu {
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+body header .headboard .container .menuBar .menu .btn-menu:hover, body header .headboard main .container--signup .menuBar .menu .btn-menu:hover, body main header .headboard .container--signup .menuBar .menu .btn-menu:hover, body header .headboard main .container--login .menuBar .menu .btn-menu:hover, body main header .headboard .container--login .menuBar .menu .btn-menu:hover {
+  box-shadow: 0px 0px 3px 0px rgb(45, 129, 255);
+  background-color: rgb(30, 95, 192);
+}
+body main .container--login {
+  margin: 7.5rem auto;
+}
+body main .container--login .form {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+body main .container--login .form .subtitle, body main .container--login .form .subtitle--blue {
+  margin-bottom: 1.2em;
+  font-size: 1.7em;
+}
+body main .container--login .form .container--input input {
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin: 10px auto;
+  border-radius: 0.15em;
+  border: 0.01em solid #226fc1;
+}
+body main .container--login .form .container--input input:focus {
+  border: 0.01em solid #06f;
+  outline: none;
+}
+body main .container--login .form .container--input label {
+  display: block;
+  color: #adadad;
+  font-size: 16px;
+  text-align: left;
+}
+body main .container--login .form input[type=submit] {
+  width: 10em;
+  margin: 0em auto;
+  margin-top: 1rem;
+  padding: 0.75em;
+  border-radius: 0.3em;
+  border: 0.05em solid #06f;
+  background-color: #06f;
+  color: #fcfcfc;
+  cursor: pointer;
+  transition: all 350ms ease;
+}
+body main .container--login .form input[type=submit]:hover {
+  background-color: rgb(16, 75, 163);
+}
+body main .container--login .btn--inline {
+  margin-top: 3rem;
+  font-size: 16px;
+}
+body main .container--signup {
+  display: none;
+  margin: 7.5rem auto;
+}
+body main .container--signup .paragraph, body main .container--signup .paragraph--big, body main .container--signup .paragraph--bold {
+  width: 50%;
+  margin: 0 auto;
+}
+body main .container--signup .btn, body main .container--signup .btn--transparent, body main .container--signup header .headboard .container .menuBar .menu .btn-menu, body header .headboard .container .menuBar .menu main .container--signup .btn-menu, body header .headboard main .container--login .menuBar .menu .container--signup .btn-menu, body main .container--signup header .headboard .container--login .menuBar .menu .btn-menu, body main header .headboard .container--login .menuBar .menu .container--signup .btn-menu, body header .headboard main .container--signup .menuBar .menu .btn-menu, body main header .headboard .container--signup .menuBar .menu .btn-menu {
+  margin-top: 3.5rem;
+}
+body main .container--signup .btn--inline {
+  margin-top: 1.5rem;
+  font-size: 16px;
+}
+body footer {
+  padding: 2rem 0em;
+  background-color: black;
+}
+body footer .copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #fcfcfc;
+}
+
+/* Medium devices (landscape tablets, 768px and dowm) */
+@media only screen and (max-width: 768px) {
+  body footer .social-media {
+    padding: 2.5em 0em 0em 0em;
+  }
+  body footer .social-media .title, body footer .social-media .title--small, body footer .social-media .title--purple {
+    margin-bottom: 1em;
+  }
+  body footer .social-media .container, body footer .social-media main .container--login, body main footer .social-media .container--login, body footer .social-media main .container--signup, body main footer .social-media .container--signup {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  body footer .social-media .copyright {
+    margin-top: 3.5em;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title--small {
+    font-size: 28px;
+    width: 90%;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+  body header .headboard {
+    padding: 1rem 0;
+  }
+  body header .headboard .container .title, body header .headboard main .container--login .title, body main header .headboard .container--login .title, body header .headboard main .container--signup .title, body main header .headboard .container--signup .title, body header .headboard .container .title--small, body header .headboard main .container--login .title--small, body main header .headboard .container--login .title--small, body header .headboard main .container--signup .title--small, body main header .headboard .container--signup .title--small, body header .headboard .container .title--purple, body header .headboard main .container--login .title--purple, body main header .headboard .container--login .title--purple, body header .headboard main .container--signup .title--purple, body main header .headboard .container--signup .title--purple {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  body header .headboard .container .menuBar, body header .headboard main .container--login .menuBar, body main header .headboard .container--login .menuBar, body header .headboard main .container--signup .menuBar, body main header .headboard .container--signup .menuBar {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  body header .headboard .container .menuBar .menu, body header .headboard main .container--login .menuBar .menu, body main header .headboard .container--login .menuBar .menu, body header .headboard main .container--signup .menuBar .menu, body main header .headboard .container--signup .menuBar .menu {
+    width: 100%;
+  }
+  body header .headboard .container .menuBar .menu .btn-menu, body header .headboard main .container--login .menuBar .menu .btn-menu, body main header .headboard .container--login .menuBar .menu .btn-menu, body header .headboard main .container--signup .menuBar .menu .btn-menu, body main header .headboard .container--signup .menuBar .menu .btn-menu {
+    margin: 0 auto;
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=login.css.map */
