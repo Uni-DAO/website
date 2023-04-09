@@ -18,10 +18,15 @@ let options = {
 
 let setItemActive = (entries, observer) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
+
+        // for desktop devices don't active gallery section animations
+        if (entry.isIntersecting
+            && !(entry.target.classList == 'gallery-img')
+            ) {
             entry.target.classList.add('active');
         }
 
+        // for mobile devices active gallery section animations
         if (!(entry.isIntersecting)
             && entry.target.classList == 'gallery-img active'
             && navigator.userAgent.toLowerCase().match(/mobile/i)) {
