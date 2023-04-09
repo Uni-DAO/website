@@ -22,15 +22,20 @@ let setItemActive = (entries, observer) => {
         // for desktop devices don't active gallery section animations
         if (entry.isIntersecting
             && !(entry.target.classList == 'gallery-img')
-            ) {
+        ) {
             entry.target.classList.add('active');
         }
 
         // for mobile devices active gallery section animations
-        if (!(entry.isIntersecting)
-            && entry.target.classList == 'gallery-img active'
+        if (entry.isIntersecting
+            && entry.target.classList == 'gallery-img'
             && navigator.userAgent.toLowerCase().match(/mobile/i)) {
-            entry.target.classList.remove('active');
+            entry.target.classList.add('active');
+        } else {
+            if (entry.target.classList == 'gallery-img active'
+                && navigator.userAgent.toLowerCase().match(/mobile/i)) {
+                    entry.target.classList.remove('active');
+            }
         }
     })
 }
