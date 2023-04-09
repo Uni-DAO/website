@@ -154,7 +154,7 @@ body .gallery img {
   opacity: 0.5;
   transition: all 0.2s ease;
 }
-body .gallery img:hover {
+body .gallery img.active {
   border: 1px solid white;
   opacity: 1;
 }
