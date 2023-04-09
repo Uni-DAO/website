@@ -10,30 +10,35 @@ imgArray = Array.from(images);
 const buttons = document.getElementsByClassName('btn');
 btnArray = Array.from(buttons);
 
-const intersectionObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entrie => {
-        if (entrie.isIntersecting) {
-            console.log(entrie.target)
-            entrie.target.classList.add('active');
+let options = {
+    rootMargin: '0px',
+    threshold: .2
+}
+
+
+let setItemActive = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
         }
+
     })
-}, {
-    rootMargin: '0px 0px 0px 0px',
-    threshold: 0.5
-});
+}
+
+let observer = new IntersectionObserver(setItemActive, options);
 
 sectionsArray.forEach(section => {
-    intersectionObserver.observe(section);
+    observer.observe(section);
 });
 
 sTitlesArray.forEach(title => {
-    intersectionObserver.observe(title);
+    observer.observe(title);
 });
 
 imgArray.forEach(img => {
-    intersectionObserver.observe(img);
+    observer.observe(img);
 });
 
 btnArray.forEach(btn => {
-    intersectionObserver.observe(btn);
+    observer.observe(btn);
 });
