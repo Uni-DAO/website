@@ -97,14 +97,14 @@ body {
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
-        
+
                 .subtitle {
                     margin-bottom: 1.2em;
                     font-size: 1.7em;
                 }
-        
+
                 .container--input {
-                    
+
                     input {
                         font-size: 18px;
                         display: block;
@@ -113,13 +113,13 @@ body {
                         margin: 10px auto;
                         border-radius: 0.15em;
                         border: 0.01em solid $blue-clear;
-            
+
                         &:focus {
                             border: 0.01em solid $blue;
                             outline: none;
                         }
                     }
-            
+
                     label {
                         display: block;
                         color: #adadad;
@@ -127,7 +127,7 @@ body {
                         text-align: left;
                     }
                 }
-        
+
                 input[type="submit"] {
                     width: 10rem;
                     margin: 0rem auto;
@@ -140,7 +140,7 @@ body {
                     font-size: 16px;
                     cursor: pointer;
                     transition: all 350ms ease;
-        
+
                     &:hover {
                         background-color: rgb(16, 75, 163);
                     }
@@ -187,8 +187,7 @@ body {
 }
 
 /* Medium devices (landscape tablets, 768px and dowm) */
-@media only screen and (max-width: 768px) {
-}
+@media only screen and (max-width: 768px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -236,13 +235,13 @@ body {
 
         main {
             .container--login {
-    
+
                 .form {
                     max-width: 300px;
                     width: 90%;
-            
+
                     .container--input {
-                        
+
                         input {
                             font-size: 16px;
                             display: block;
@@ -251,16 +250,22 @@ body {
                             margin: 10px auto;
                             border-radius: 0.15em;
                             border: 0.01em solid $blue-clear;
-                
+
                             &:focus {
                                 border: 0.01em solid $blue;
                                 outline: none;
                             }
                         }
-                
+
                         label {
                             font-size: 14px;
                         }
+                    }
+
+                    input[type="submit"] {
+                        width: 50%;
+                        padding: 1rem 0 1rem 0;
+                        font-size: 16px;
                     }
                 }
             }
@@ -268,7 +273,7 @@ body {
             .container--signup {
                 @extend .container;
                 margin: 3.5rem auto 7.5rem auto;
-    
+
                 .title--small {
                     margin-bottom: 3.5rem;
                 }
@@ -278,11 +283,11 @@ body {
                     margin: 0 auto;
                     line-height: 25px;
                 }
-    
+
                 .btn {
                     margin-top: 4rem;
                 }
-    
+
                 .btn--inline {
                     margin-top: 2rem;
                     font-size: 16px;
