@@ -12,7 +12,7 @@ btnArray = Array.from(buttons);
 
 let options = {
     rootMargin: '0px',
-    threshold: .2
+    threshold: .25
 }
 
 
@@ -22,6 +22,11 @@ let setItemActive = (entries, observer) => {
             entry.target.classList.add('active');
         }
 
+        if (!(entry.isIntersecting)
+            && entry.target.classList == 'gallery-img active'
+            && navigator.userAgent.toLowerCase().match(/mobile/i)) {
+            entry.target.classList.remove('active');
+        }
     })
 }
 

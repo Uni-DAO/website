@@ -765,4 +765,9 @@ body header .headboard .container .menuBar .menu .active.btn-menu,
 body main .banner .container .description .containerButton .active.btn-learn,
 body main .banner .container .description .containerButton .active.btn-discord {
   opacity: 1;
+}
+
+.gallery img.active {
+  border: 1px solid white;
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */
